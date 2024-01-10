@@ -1,0 +1,59 @@
+// base color
+$primary: #ba995b;
+$secondary: #171716;
+$warning: #e0090d;
+$success: #1be014;
+
+// base background-color
+$bg-primary: #edd7be;
+$bg-secondary: #ffffff;
+$bg-header: #b5a796;
+$bg-card: #ebe8e8;
+$bg-footer: #6f9196;
+$bg-cover: #f7f7ed;
+
+// signal
+$positive: #66d9cb;
+$negative: #544f4c;
+$info: #aed5f5;
+
+
+// color pallets
+$colors: (
+        "dark-cerulean": #044d88,
+        "navy-blue": #0070c0,
+        "sky-blue": #92dff1,
+        "black": #000000,
+        "white": #ffffff,
+        "background": #fbfbfb,
+        "white-100": #fafafa,
+        "white-150": #f9f9f9,
+        "white-200": #f8f8f9,
+        "white-300": #edf1f3,
+        "light-accent": #f6f5fb,
+        "gainsboro": #e7e7e7,
+        "sunglow": #ffcd1b,
+        "lemon": #fff511,
+        "windsor": #332b7d,
+        "light-brown": #c65656,
+        "fern": #63b65c,
+        "slate-200": #e2e8f0,
+        "slate-300": #cbd5e1,
+        "slate-400": #94a3b8,
+        "slate-500": #64748b,
+        "slate-600": #475569,
+        "slate-700": #334155,
+        "slate-800": #1e293b,
+);
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+  .bg-#{$name} {
+    background: $color !important;
+  }
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}

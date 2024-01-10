@@ -1,0 +1,1 @@
+node-sass .\index.scss index.css && node-sass .\color.scss color.css && node-sass .\components.scss components.css && node-sass .\font.scss font.css

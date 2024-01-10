@@ -1,0 +1,46 @@
+
+body {
+    background: url('assets\background-img.jpg')
+}
+
+head {
+    size: 100px;
+}
+.navbar ul{
+    font-size: 20px;
+    list-style-type: none;
+    background-color: #A41623;
+    padding: 0px;
+    margin: -8px;
+    overflow: hidden;
+}
+.categories img{
+    padding: 0px 60px;
+}
+.categories a{
+    color: white;
+    text-decoration: none;
+    padding: 35px 20px;
+    display: block;
+    text-align: center;
+}
+.categories a:hover{
+    background-color: #F85E00;
+    border-radius: 10px;
+    color: #C6B986;
+}
+.categories li{
+    float: left;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 35px 70px;
+    display: block;
+    text-align: center;
+}
+
+.search img{
+    width: 20px;
+    height: 20px;
+}

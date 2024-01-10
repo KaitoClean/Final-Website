@@ -1,0 +1,249 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+body {
+  background: url('assets\background-img.jpg')
+}
+
+head {
+  size: 100px;
+}
+.navbar ul{
+  font-size: 20px;
+  list-style-type: none;
+  background-color: #A41623;
+  padding: 0px;
+  margin: -8px;
+  overflow: hidden;
+}
+.categories img{
+  padding: 0px 60px;
+}
+.categories a{
+  color: white;
+  text-decoration: none;
+  padding: 35px 20px;
+  display: block;
+  text-align: center;
+}
+.categories a:hover{
+  background-color: #F85E00;
+  border-radius: 10px;
+  color: #C6B986;
+}
+.categories li{
+  float: left;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 35px 70px;
+  display: block;
+  text-align: center;
+}
+
+.search img{
+  width: 20px;
+  height: 20px;
+}
+
+@import "./color.scss";
+@import "./font.scss";
+
+$breakeven-screen: 1024px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $bg-primary;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+// Header
+.header {
+  width: 100vw;
+  height: 5em;
+  background-color: $bg-header;
+  padding-bottom: 2em;
+  padding-right: 10em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header ul{
+  top: 0;
+  //background: $bg-header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo {
+  margin-right: 15em;
+}
+
+.header li {
+  float: left;
+  min-width: 5em;
+  margin-right: 5em;
+}
+
+// Container
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $breakeven-screen) {
+    margin-left: 10em;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex: fit-content;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-header {
+  text-align: justify;
+  margin-bottom: 2em;
+  padding: 0 2em;
+  width: 85vw;
+}
+
+.menu-header h1{
+  text-align: center;
+}
+
+.menu-container {
+  background: $bg-card;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  @media (max-width: $breakeven-screen) {
+    width: 50%;
+  }
+}
+
+.image-container-1,
+.image-container-2,
+.image-container-3,
+.image-container-4,
+.image-container-5,
+.image-container-6,
+.image-container-7,
+.image-container-8
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 12em;
+  height: 18em;
+  @media (max-width: $breakeven-screen) {
+    width: 8em;
+    height: 12em;
+  }
+}
+
+.image-container-1 {
+  background-image: url("adobo.png");
+}
+
+.image-container-2 {
+  background-image: url("pinoy-curry.png");
+}
+
+.image-container-3 {
+  background-image: url("bulalo.png");
+}
+
+.image-container-4 {
+  background-image: url("../assets/menu_4.svg");
+}
+
+.image-container-5 {
+  background-image: url("../assets/menu_5.svg");
+}
+
+.image-container-6 {
+  background-image: url("../assets/menu_6.svg");
+}
+
+.image-container-7 {
+  background-image: url("../assets/menu_7.svg");
+}
+
+.image-container-8 {
+  background-image: url("../assets/menu_8.svg");
+}
+
+
+.image-description {
+  margin-top: 2em;
+  font-size: 14px;
+  line-height: 1em;
+  width: 75%;
+}
+
+.image-description h1 {
+  text-align: center;
+  line-height: 1em;
+  min-height: fit-content;
+}
+
+.about {
+  width: 75%;
+  text-align: center;
+}
+
+
+// footer
+.footer {
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: $bg-footer;
+  padding: 2em 5em;
+}
+
+.socials-icon {
+  margin-top: 2em;
+  left: 0;
+  margin-left: -2.5em;
+}
+
+.socials-icon li {
+  float: left;
+  margin-right: 2em;
+}
+
+.footer-menu {
+  margin-left: 35%;
+  font-size: 1.2em;
+}
+
+.footer-menu li {
+  margin-bottom: 2em;
+}
+
